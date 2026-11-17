@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "nip": "999000000000000001",
+    "full_name": "Dra. Hj. Euis Kurniasih, M.Pd.",
+    "phone": "080017189056",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "user_id": 3,
+    "nip": "999000000000000002",
+    "full_name": "Drs. Dadang Supriatna, M.Pd.",
+    "phone": "080028813119",
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "user_id": 4,
+    "nip": "999000000000000003",
+    "full_name": "Asep Saepul Rohman, S.Pd.",
+    "phone": "080034254997",
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "user_id": 5,
+    "nip": "999000000000000004",
+    "full_name": "Nenden Nurhayati, S.Pd.",
+    "phone": "080076288107",
+    "is_active": true
+  },
+  {
+    "id": 5,
+    "user_id": 6,
+    "nip": "999000000000000005",
+    "full_name": "Rudi Hermawan, S.Pd.",
+    "phone": "080029696365",
+    "is_active": true
+  },
+  {
+    "id": 6,
+    "user_id": 7,
+    "nip": "999000000000000006",
+    "full_name": "Lia Amalia, S.Pd.",
+    "phone": "080007638193",
+    "is_active": true
+  },
+  {
+    "id": 7,
+    "user_id": 8,
+    "nip": "999000000000000007",
+    "full_name": "Hendra Gunawan, S.Kom.",
+    "phone": "080075870447",
+    "is_active": true
+  },
+  {
+    "id": 8,
+    "user_id": 9,
+    "nip": "999000000000000008",
+    "full_name": "Siti Maryam, S.Pd.",
+    "phone": "080034808577",
+    "is_active": true
+  },
+  {
+    "id": 9,
+    "user_id": 10,
+    "nip": "999000000000000009",
+    "full_name": "Yudi Permana, S.Pd.",
+    "phone": "080049535570",
+    "is_active": true
+  },
+  {
+    "id": 10,
+    "user_id": 11,
+    "nip": "999000000000000010",
+    "full_name": "Rina Marlina, S.Pd., Gr.",
+    "phone": "080023334322",
+    "is_active": false
+  }
+]

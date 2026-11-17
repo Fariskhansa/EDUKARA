@@ -1,0 +1,674 @@
+[
+  {
+    "id": 1,
+    "user_id": 72,
+    "full_name": "Nining Rahayu",
+    "phone": "080048803748",
+    "email": "ortu001@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "user_id": 73,
+    "full_name": "Ujang Gunawan",
+    "phone": "080004799838",
+    "email": "ortu002@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "user_id": 74,
+    "full_name": "Iis Maulana",
+    "phone": "080026872692",
+    "email": "ortu003@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "user_id": 75,
+    "full_name": "Imas Kurniawan",
+    "phone": "080035024521",
+    "email": "ortu004@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 5,
+    "user_id": 76,
+    "full_name": "Aep Hermawan",
+    "phone": "080037197849",
+    "email": "ortu005@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 6,
+    "user_id": null,
+    "full_name": "Imas Pratama",
+    "phone": "080029334421",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 7,
+    "user_id": 77,
+    "full_name": "Imas Pratama",
+    "phone": "080034795943",
+    "email": "ortu006@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 8,
+    "user_id": 78,
+    "full_name": "Ujang Kartika",
+    "phone": "080018684496",
+    "email": "ortu007@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 9,
+    "user_id": 79,
+    "full_name": "Imas Nugraha",
+    "phone": "080051252327",
+    "email": "ortu008@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 10,
+    "user_id": 80,
+    "full_name": "Elis Maulana",
+    "phone": "080094847456",
+    "email": "ortu009@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 11,
+    "user_id": 81,
+    "full_name": "Wawan Ramadhan",
+    "phone": "080009466348",
+    "email": "ortu010@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 12,
+    "user_id": 82,
+    "full_name": "Yeni Permana",
+    "phone": "080026631589",
+    "email": "ortu011@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 13,
+    "user_id": 83,
+    "full_name": "Yayah Hermawan",
+    "phone": "080000049233",
+    "email": "ortu012@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 14,
+    "user_id": 84,
+    "full_name": "Iwan Saputra",
+    "phone": "080044975815",
+    "email": "ortu013@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 15,
+    "user_id": 85,
+    "full_name": "Nining Maulana",
+    "phone": "080016970930",
+    "email": "ortu014@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 16,
+    "user_id": null,
+    "full_name": "Popon Hidayat",
+    "phone": "080082335553",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 17,
+    "user_id": null,
+    "full_name": "Hendra Hidayat",
+    "phone": "080090309969",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 18,
+    "user_id": 86,
+    "full_name": "Elis Kartika",
+    "phone": "080022462971",
+    "email": "ortu015@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 19,
+    "user_id": 87,
+    "full_name": "Iis Hamdani",
+    "phone": "080000798019",
+    "email": "ortu016@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 20,
+    "user_id": 88,
+    "full_name": "Asep Kartika",
+    "phone": "080034606569",
+    "email": "ortu017@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 21,
+    "user_id": 89,
+    "full_name": "Yayah Wijaya",
+    "phone": "080045329495",
+    "email": "ortu018@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 22,
+    "user_id": 90,
+    "full_name": "Elis Sukmawati",
+    "phone": "080094003751",
+    "email": "ortu019@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 23,
+    "user_id": 91,
+    "full_name": "Cecep Rahayu",
+    "phone": "080071687293",
+    "email": "ortu020@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 24,
+    "user_id": 92,
+    "full_name": "Enok Maulana",
+    "phone": "080060701675",
+    "email": "ortu021@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 25,
+    "user_id": 93,
+    "full_name": "Rohayati Pratama",
+    "phone": "080023872607",
+    "email": "ortu022@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 26,
+    "user_id": 94,
+    "full_name": "Tatang Sukmawati",
+    "phone": "080035163068",
+    "email": "ortu023@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 27,
+    "user_id": null,
+    "full_name": "Elis Firmansyah",
+    "phone": "080082874617",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 28,
+    "user_id": 95,
+    "full_name": "Iis Rahayu",
+    "phone": "080030078725",
+    "email": "ortu024@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 29,
+    "user_id": 96,
+    "full_name": "Dadang Hamdani",
+    "phone": "080075459351",
+    "email": "ortu025@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 30,
+    "user_id": 97,
+    "full_name": "Ani Setiawan",
+    "phone": "080042531721",
+    "email": "ortu026@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 31,
+    "user_id": 98,
+    "full_name": "Iis Hamdani",
+    "phone": "080077736131",
+    "email": "ortu027@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 32,
+    "user_id": 99,
+    "full_name": "Dedi Hermawan",
+    "phone": "080052480582",
+    "email": "ortu028@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 33,
+    "user_id": 100,
+    "full_name": "Iis Firmansyah",
+    "phone": "080084409686",
+    "email": "ortu029@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 34,
+    "user_id": 101,
+    "full_name": "Popon Sukmawati",
+    "phone": "080030808344",
+    "email": "ortu030@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 35,
+    "user_id": 102,
+    "full_name": "Dadang Gunawan",
+    "phone": "080022664927",
+    "email": "ortu031@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 36,
+    "user_id": 103,
+    "full_name": "Cucu Ramadhan",
+    "phone": "080030516939",
+    "email": "ortu032@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 37,
+    "user_id": null,
+    "full_name": "Nining Purnama",
+    "phone": "080086323514",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 38,
+    "user_id": null,
+    "full_name": "Dedi Kurniawan",
+    "phone": "080063712717",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 39,
+    "user_id": 104,
+    "full_name": "Ani Gunawan",
+    "phone": "080008261622",
+    "email": "ortu033@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 40,
+    "user_id": 105,
+    "full_name": "Popon Ramadhan",
+    "phone": "080029415154",
+    "email": "ortu034@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 41,
+    "user_id": 106,
+    "full_name": "Agus Saputra",
+    "phone": "080043371338",
+    "email": "ortu035@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 42,
+    "user_id": 107,
+    "full_name": "Iis Rahayu",
+    "phone": "080076900584",
+    "email": "ortu036@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 43,
+    "user_id": 108,
+    "full_name": "Tati Pratama",
+    "phone": "080033843982",
+    "email": "ortu037@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 44,
+    "user_id": 109,
+    "full_name": "Dadang Saputra",
+    "phone": "080036735676",
+    "email": "ortu038@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 45,
+    "user_id": 110,
+    "full_name": "Cucu Suryani",
+    "phone": "080044267930",
+    "email": "ortu039@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 46,
+    "user_id": 111,
+    "full_name": "Iis Maulana",
+    "phone": "080055225706",
+    "email": "ortu040@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 47,
+    "user_id": 112,
+    "full_name": "Hendra Setiawan",
+    "phone": "080000152245",
+    "email": "ortu041@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 48,
+    "user_id": null,
+    "full_name": "Cucu Wijaya",
+    "phone": "080005077948",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 49,
+    "user_id": 113,
+    "full_name": "Neneng Setiawan",
+    "phone": "080046080111",
+    "email": "ortu042@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 50,
+    "user_id": 114,
+    "full_name": "Ujang Pratama",
+    "phone": "080045527316",
+    "email": "ortu043@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 51,
+    "user_id": 115,
+    "full_name": "Euis Permana",
+    "phone": "080051386171",
+    "email": "ortu044@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 52,
+    "user_id": 116,
+    "full_name": "Elis Hamdani",
+    "phone": "080092759185",
+    "email": "ortu045@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 53,
+    "user_id": 117,
+    "full_name": "Iwan Hamdani",
+    "phone": "080069759915",
+    "email": "ortu046@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 54,
+    "user_id": 118,
+    "full_name": "Euis Gunawan",
+    "phone": "080074588735",
+    "email": "ortu047@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 55,
+    "user_id": 119,
+    "full_name": "Lilis Kurniawan",
+    "phone": "080062357680",
+    "email": "ortu048@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 56,
+    "user_id": 120,
+    "full_name": "Tatang Maulana",
+    "phone": "080044704154",
+    "email": "ortu049@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 57,
+    "user_id": 121,
+    "full_name": "Tati Suryani",
+    "phone": "080076926823",
+    "email": "ortu050@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 58,
+    "user_id": null,
+    "full_name": "Enok Suryani",
+    "phone": "080033250890",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 59,
+    "user_id": null,
+    "full_name": "Dedi Maulana",
+    "phone": "080002113826",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 60,
+    "user_id": 122,
+    "full_name": "Popon Ramadhan",
+    "phone": "080087137295",
+    "email": "ortu051@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 61,
+    "user_id": 123,
+    "full_name": "Rohayati Kurniawan",
+    "phone": "080013465462",
+    "email": "ortu052@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 62,
+    "user_id": 124,
+    "full_name": "Agus Wijaya",
+    "phone": "080044735679",
+    "email": "ortu053@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 63,
+    "user_id": 125,
+    "full_name": "Yayah Purnama",
+    "phone": "080088560202",
+    "email": "ortu054@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 64,
+    "user_id": 126,
+    "full_name": "Tati Hamdani",
+    "phone": "080090991724",
+    "email": "ortu055@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 65,
+    "user_id": 127,
+    "full_name": "Tatang Gunawan",
+    "phone": "080075957383",
+    "email": "ortu056@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 66,
+    "user_id": 128,
+    "full_name": "Tati Purnama",
+    "phone": "080024201107",
+    "email": "ortu057@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 67,
+    "user_id": 129,
+    "full_name": "Lilis Maulana",
+    "phone": "080059214823",
+    "email": "ortu058@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 68,
+    "user_id": 130,
+    "full_name": "Dedi Gunawan",
+    "phone": "080037069293",
+    "email": "ortu059@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 69,
+    "user_id": null,
+    "full_name": "Euis Wijaya",
+    "phone": "080061843024",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 70,
+    "user_id": 131,
+    "full_name": "Cucu Pratama",
+    "phone": "080029133751",
+    "email": "ortu060@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 71,
+    "user_id": 132,
+    "full_name": "Cecep Firmansyah",
+    "phone": "080044907911",
+    "email": "ortu061@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 72,
+    "user_id": 133,
+    "full_name": "Iis Ramadhan",
+    "phone": "080036561252",
+    "email": "ortu062@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 73,
+    "user_id": 134,
+    "full_name": "Cucu Fauzi",
+    "phone": "080017616295",
+    "email": "ortu063@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 74,
+    "user_id": 135,
+    "full_name": "Hendra Ramadhan",
+    "phone": "080016338094",
+    "email": "ortu064@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 75,
+    "user_id": 136,
+    "full_name": "Lilis Hamdani",
+    "phone": "080077855536",
+    "email": "ortu065@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 76,
+    "user_id": 137,
+    "full_name": "Elis Kartika",
+    "phone": "080014949234",
+    "email": "ortu066@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 77,
+    "user_id": 138,
+    "full_name": "Yayan Purnama",
+    "phone": "080041333257",
+    "email": "ortu067@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 78,
+    "user_id": 139,
+    "full_name": "Enok Kartika",
+    "phone": "080016935108",
+    "email": "ortu068@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 79,
+    "user_id": null,
+    "full_name": "Lilis Gunawan",
+    "phone": "080062896773",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 80,
+    "user_id": null,
+    "full_name": "Dodi Saputra",
+    "phone": "080046905001",
+    "email": null,
+    "is_active": true
+  },
+  {
+    "id": 81,
+    "user_id": 140,
+    "full_name": "Euis Nugraha",
+    "phone": "080033287988",
+    "email": "ortu069@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 82,
+    "user_id": 141,
+    "full_name": "Imas Firmansyah",
+    "phone": "080047664515",
+    "email": "ortu070@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 83,
+    "user_id": 142,
+    "full_name": "Agus Maulana",
+    "phone": "080012794071",
+    "email": "ortu071@contoh.test",
+    "is_active": true
+  },
+  {
+    "id": 84,
+    "user_id": 143,
+    "full_name": "Lilis Kartika",
+    "phone": "080067369338",
+    "email": "ortu072@contoh.test",
+    "is_active": true
+  }
+]

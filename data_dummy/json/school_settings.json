@@ -1,0 +1,181 @@
+[
+  {
+    "id": 1,
+    "key": "app.timezone",
+    "value": "Asia/Jakarta",
+    "description": "Zona waktu sekolah",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 2,
+    "key": "attendance.sessions_per_day",
+    "value": 1,
+    "description": "Absensi sekali sehari (keputusan sekolah 14-10-2026)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 3,
+    "key": "attendance.late_policy",
+    "value": "tandai",
+    "description": "Pengajuan setelah batas terlambat tetap diterima dan ditandai Terlambat (keputusan sekolah)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 4,
+    "key": "attendance.periods",
+    "value": [
+      {
+        "name": "Masuk",
+        "opens_at": "06:00",
+        "late_after": "07:00",
+        "closes_at": "12:00",
+        "active_days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "description": "Jam sesi — NILAI DUMMY, menunggu Q-02",
+    "is_dummy_value": true,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 5,
+    "key": "attendance.absence_types_enabled",
+    "value": false,
+    "description": "Izin/Sakit/Alpa ditunda (keputusan sekolah)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 6,
+    "key": "attendance.resubmit_after_reject",
+    "value": null,
+    "description": "Belum ditetapkan (Q-09)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 7,
+    "key": "attendance.revision_window_hours",
+    "value": null,
+    "description": "Belum ditetapkan (Q-09)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 8,
+    "key": "attendance.validation_deadline",
+    "value": null,
+    "description": "Belum ditetapkan (Q-07)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 9,
+    "key": "auth.student_method",
+    "value": "nis",
+    "description": "Siswa login dengan NIS saja (keputusan sekolah)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 10,
+    "key": "auth.max_attempts",
+    "value": 5,
+    "description": "Batas percobaan login — NILAI DUMMY",
+    "is_dummy_value": true,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 11,
+    "key": "auth.lockout_minutes",
+    "value": 15,
+    "description": "Durasi blokir sementara — NILAI DUMMY",
+    "is_dummy_value": true,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 12,
+    "key": "camera.preferred_facing",
+    "value": "environment",
+    "description": "Kamera belakang, memotret kelas (keputusan sekolah)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 13,
+    "key": "gps.school_center",
+    "value": {
+      "lat": -6.864,
+      "lng": 108.0325
+    },
+    "description": "Titik pusat sekolah — NILAI DUMMY, menunggu Q-18",
+    "is_dummy_value": true,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 14,
+    "key": "gps.radius_m",
+    "value": 150,
+    "description": "Radius toleransi — NILAI DUMMY, menunggu Q-18",
+    "is_dummy_value": true,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 15,
+    "key": "gps.max_accuracy_m",
+    "value": 50,
+    "description": "Akurasi memadai — NILAI DUMMY, menunggu Q-18",
+    "is_dummy_value": true,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 16,
+    "key": "gps.outside_policy",
+    "value": "tandai",
+    "description": "Di luar radius hanya ditandai — NILAI DUMMY, menunggu Q-18",
+    "is_dummy_value": true,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 17,
+    "key": "photo.max_size_kb",
+    "value": 2048,
+    "description": "Batas ukuran foto — NILAI DUMMY",
+    "is_dummy_value": true,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  },
+  {
+    "id": 18,
+    "key": "photo.retention_days",
+    "value": null,
+    "description": "Belum ditetapkan (Q-15)",
+    "is_dummy_value": false,
+    "updated_by": 1,
+    "updated_at": "2026-07-01 08:00:00"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "academic_year_id": 1,
+    "grade_level": "X",
+    "name": "X-1",
+    "program": null,
+    "homeroom_teacher_id": 3,
+    "is_active": false
+  },
+  {
+    "id": 2,
+    "academic_year_id": 1,
+    "grade_level": "X",
+    "name": "X-2",
+    "program": null,
+    "homeroom_teacher_id": 4,
+    "is_active": false
+  },
+  {
+    "id": 3,
+    "academic_year_id": 1,
+    "grade_level": "XI",
+    "name": "XI-1",
+    "program": null,
+    "homeroom_teacher_id": 5,
+    "is_active": false
+  },
+  {
+    "id": 4,
+    "academic_year_id": 1,
+    "grade_level": "XI",
+    "name": "XI-2",
+    "program": null,
+    "homeroom_teacher_id": 6,
+    "is_active": false
+  },
+  {
+    "id": 5,
+    "academic_year_id": 2,
+    "grade_level": "X",
+    "name": "X-1",
+    "program": null,
+    "homeroom_teacher_id": 3,
+    "is_active": true
+  },
+  {
+    "id": 6,
+    "academic_year_id": 2,
+    "grade_level": "X",
+    "name": "X-2",
+    "program": null,
+    "homeroom_teacher_id": 4,
+    "is_active": true
+  },
+  {
+    "id": 7,
+    "academic_year_id": 2,
+    "grade_level": "XI",
+    "name": "XI-1",
+    "program": null,
+    "homeroom_teacher_id": 5,
+    "is_active": true
+  },
+  {
+    "id": 8,
+    "academic_year_id": 2,
+    "grade_level": "XI",
+    "name": "XI-2",
+    "program": null,
+    "homeroom_teacher_id": 6,
+    "is_active": true
+  },
+  {
+    "id": 9,
+    "academic_year_id": 2,
+    "grade_level": "XII",
+    "name": "XII-1",
+    "program": null,
+    "homeroom_teacher_id": 7,
+    "is_active": true
+  },
+  {
+    "id": 10,
+    "academic_year_id": 2,
+    "grade_level": "XII",
+    "name": "XII-2",
+    "program": null,
+    "homeroom_teacher_id": 8,
+    "is_active": true
+  }
+]

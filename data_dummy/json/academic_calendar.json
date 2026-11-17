@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "date": "2026-10-09",
+    "type": "libur",
+    "description": "Libur kegiatan sekolah (DUMMY)",
+    "is_school_day": false
+  }
+]

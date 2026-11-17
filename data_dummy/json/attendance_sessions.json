@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "attendance_period_id": 1,
+    "session_date": "2026-09-21",
+    "opens_at": "2026-09-21 06:00:00",
+    "closes_at": "2026-09-21 12:00:00",
+    "late_after": "2026-09-21 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 2,
+    "attendance_period_id": 1,
+    "session_date": "2026-09-22",
+    "opens_at": "2026-09-22 06:00:00",
+    "closes_at": "2026-09-22 12:00:00",
+    "late_after": "2026-09-22 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 3,
+    "attendance_period_id": 1,
+    "session_date": "2026-09-23",
+    "opens_at": "2026-09-23 06:00:00",
+    "closes_at": "2026-09-23 12:00:00",
+    "late_after": "2026-09-23 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 4,
+    "attendance_period_id": 1,
+    "session_date": "2026-09-24",
+    "opens_at": "2026-09-24 06:00:00",
+    "closes_at": "2026-09-24 12:00:00",
+    "late_after": "2026-09-24 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 5,
+    "attendance_period_id": 1,
+    "session_date": "2026-09-25",
+    "opens_at": "2026-09-25 06:00:00",
+    "closes_at": "2026-09-25 12:00:00",
+    "late_after": "2026-09-25 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 6,
+    "attendance_period_id": 1,
+    "session_date": "2026-09-28",
+    "opens_at": "2026-09-28 06:00:00",
+    "closes_at": "2026-09-28 12:00:00",
+    "late_after": "2026-09-28 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 7,
+    "attendance_period_id": 1,
+    "session_date": "2026-09-29",
+    "opens_at": "2026-09-29 06:00:00",
+    "closes_at": "2026-09-29 12:00:00",
+    "late_after": "2026-09-29 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 8,
+    "attendance_period_id": 1,
+    "session_date": "2026-09-30",
+    "opens_at": "2026-09-30 06:00:00",
+    "closes_at": "2026-09-30 12:00:00",
+    "late_after": "2026-09-30 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 9,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-01",
+    "opens_at": "2026-10-01 06:00:00",
+    "closes_at": "2026-10-01 12:00:00",
+    "late_after": "2026-10-01 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 10,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-02",
+    "opens_at": "2026-10-02 06:00:00",
+    "closes_at": "2026-10-02 12:00:00",
+    "late_after": "2026-10-02 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 11,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-05",
+    "opens_at": "2026-10-05 06:00:00",
+    "closes_at": "2026-10-05 12:00:00",
+    "late_after": "2026-10-05 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 12,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-06",
+    "opens_at": "2026-10-06 06:00:00",
+    "closes_at": "2026-10-06 12:00:00",
+    "late_after": "2026-10-06 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 13,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-07",
+    "opens_at": "2026-10-07 06:00:00",
+    "closes_at": "2026-10-07 12:00:00",
+    "late_after": "2026-10-07 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 14,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-08",
+    "opens_at": "2026-10-08 06:00:00",
+    "closes_at": "2026-10-08 12:00:00",
+    "late_after": "2026-10-08 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 15,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-12",
+    "opens_at": "2026-10-12 06:00:00",
+    "closes_at": "2026-10-12 12:00:00",
+    "late_after": "2026-10-12 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 16,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-13",
+    "opens_at": "2026-10-13 06:00:00",
+    "closes_at": "2026-10-13 12:00:00",
+    "late_after": "2026-10-13 07:00:00",
+    "status": "closed"
+  },
+  {
+    "id": 17,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-14",
+    "opens_at": "2026-10-14 06:00:00",
+    "closes_at": "2026-10-14 12:00:00",
+    "late_after": "2026-10-14 07:00:00",
+    "status": "open"
+  },
+  {
+    "id": 18,
+    "attendance_period_id": 1,
+    "session_date": "2026-10-15",
+    "opens_at": "2026-10-15 06:00:00",
+    "closes_at": "2026-10-15 12:00:00",
+    "late_after": "2026-10-15 07:00:00",
+    "status": "scheduled"
+  }
+]

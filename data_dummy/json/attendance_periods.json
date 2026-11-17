@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Masuk",
+    "opens_at": "06:00:00",
+    "closes_at": "12:00:00",
+    "late_after": "07:00:00",
+    "active_days": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "is_active": true
+  }
+]

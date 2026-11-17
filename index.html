@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistem Informasi Kesiswaan SMA Negeri Situraja — Kelola absensi, pelanggaran, laporan, dan pemantauan siswa secara digital.">
+  <title>Sistem Informasi Kesiswaan — SMA Negeri Situraja</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-sma-situraja.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo-sma-situraja.png" alt="Logo SMA Negeri Situraja" class="navbar-logo" width="40" height="40">
+        <div class="navbar-brand-text">
+          <span class="navbar-title">SMA Negeri Situraja</span>
+          <span class="navbar-subtitle">Sistem Informasi Kesiswaan</span>
+        </div>
+      </a>
+
+      <nav class="navbar-nav" id="navbarNav" aria-label="Navigasi utama">
+        <ul class="navbar-menu">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#fitur" class="nav-link">Fitur</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a href="login.html" class="btn btn-login-nav">Masuk</a>
+
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navbarNav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="beranda">
+    <div class="hero-bg" role="img" aria-label="Foto Gedung SMA Negeri Situraja"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="assets/images/logo-sma-situraja.png" alt="" class="hero-logo" width="96" height="96" aria-hidden="true">
+      <h1 class="hero-title">Sistem Informasi <span class="hero-title-break">Kesiswaan</span></h1>
+      <p class="hero-desc">Kelola data absensi, catatan pelanggaran, laporan akademik, dan pemantauan siswa SMA Negeri Situraja dalam satu platform digital yang terpadu.</p>
+      <div class="hero-actions">
+        <a href="login.html" class="btn btn-primary">Masuk ke Sistem</a>
+        <a href="#tentang" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TENTANG SECTION ============ -->
+  <section class="section section-about" id="tentang">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tentang Sistem</h2>
+        <p class="section-lead">Platform digital yang mempermudah pengelolaan data kesiswaan secara efisien, transparan, dan dapat diakses oleh seluruh pihak yang berkepentingan.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fa-solid fa-school" aria-hidden="true"></i>
+          </div>
+          <h3>Untuk Sekolah</h3>
+          <p>Pencatatan dan pengelolaan data kesiswaan yang tersentralisasi, mengurangi administrasi manual dan risiko kehilangan data.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>
+          </div>
+          <h3>Untuk Guru</h3>
+          <p>Kemudahan dalam mencatat kehadiran, mendokumentasikan pelanggaran, dan memantau perkembangan siswa secara real-time.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+          </div>
+          <h3>Untuk Orang Tua</h3>
+          <p>Akses langsung untuk memantau kehadiran dan catatan perilaku anak, meningkatkan keterlibatan dalam proses pendidikan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FITUR SECTION ============ -->
+  <section class="section section-features" id="fitur">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Fitur Utama</h2>
+        <p class="section-lead">Empat pilar layanan yang dirancang untuk menunjang pengelolaan kesiswaan secara menyeluruh.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon feature-icon--blue">
+            <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+          </div>
+          <h3 class="feature-title">Absensi Digital</h3>
+          <p class="feature-desc">Pencatatan kehadiran siswa secara digital dengan rekapitulasi otomatis per kelas, per semester, dan per tahun ajaran.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon feature-icon--red">
+            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+          </div>
+          <h3 class="feature-title">Catatan Pelanggaran</h3>
+          <p class="feature-desc">Dokumentasi pelanggaran tata tertib beserta sistem poin yang terstruktur dan dapat ditelusuri riwayatnya.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon feature-icon--green">
+            <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
+          </div>
+          <h3 class="feature-title">Laporan &amp; Statistik</h3>
+          <p class="feature-desc">Laporan komprehensif mengenai kehadiran, pelanggaran, dan data kesiswaan yang dapat diekspor untuk kebutuhan evaluasi.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon feature-icon--gold">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+          </div>
+          <h3 class="feature-title">Pemantauan Orang Tua</h3>
+          <p class="feature-desc">Portal khusus bagi orang tua untuk memantau kehadiran dan catatan perilaku anak secara mandiri dan transparan.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-sma-situraja.png" alt="" class="footer-logo" width="48" height="48" aria-hidden="true">
+          <div>
+            <p class="footer-school-name">SMA Negeri Situraja</p>
+            <p class="footer-motto">Kawignyan Askaraning Tyas</p>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <address>
+            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Jl. Raya Situraja, Kec. Situraja, Kab. Sumedang, Jawa Barat</p>
+            <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+62XXXXXXXXXX">(0261) XXX-XXXX</a></p>
+            <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:info@smansituraja.sch.id">info@smansituraja.sch.id</a></p>
+          </address>
+        </div>
+
+        <div class="footer-links">
+          <h4>Tautan</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Sistem</a></li>
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="login.html">Masuk</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SMA Negeri Situraja. Sistem Informasi Kesiswaan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

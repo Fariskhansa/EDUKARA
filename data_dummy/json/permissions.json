@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "name": "attendance.submit",
+    "module": "absensi",
+    "display_name": "Mengajukan absensi"
+  },
+  {
+    "id": 2,
+    "name": "attendance.view_own",
+    "module": "absensi",
+    "display_name": "Melihat riwayat absensi sendiri"
+  },
+  {
+    "id": 3,
+    "name": "attendance.view_all",
+    "module": "validasi",
+    "display_name": "Melihat seluruh pengajuan"
+  },
+  {
+    "id": 4,
+    "name": "attendance.photo.view",
+    "module": "validasi",
+    "display_name": "Melihat foto bukti"
+  },
+  {
+    "id": 5,
+    "name": "attendance.validate",
+    "module": "validasi",
+    "display_name": "Menerima/menolak pengajuan"
+  },
+  {
+    "id": 6,
+    "name": "attendance.revise_decision",
+    "module": "validasi",
+    "display_name": "Merevisi keputusan validasi"
+  },
+  {
+    "id": 7,
+    "name": "report.view",
+    "module": "laporan",
+    "display_name": "Melihat rekap & laporan"
+  },
+  {
+    "id": 8,
+    "name": "report.export",
+    "module": "laporan",
+    "display_name": "Ekspor laporan Excel"
+  },
+  {
+    "id": 9,
+    "name": "dashboard.school",
+    "module": "laporan",
+    "display_name": "Dashboard sekolah"
+  },
+  {
+    "id": 10,
+    "name": "teacher_data.view",
+    "module": "laporan",
+    "display_name": "Dashboard data guru"
+  },
+  {
+    "id": 11,
+    "name": "child.view",
+    "module": "orang_tua",
+    "display_name": "Melihat data anak terhubung"
+  },
+  {
+    "id": 12,
+    "name": "violation.view_own",
+    "module": "pelanggaran",
+    "display_name": "Melihat poin pelanggaran sendiri"
+  },
+  {
+    "id": 13,
+    "name": "violation.view_child",
+    "module": "pelanggaran",
+    "display_name": "Melihat poin pelanggaran anak"
+  },
+  {
+    "id": 14,
+    "name": "violation.create",
+    "module": "pelanggaran",
+    "display_name": "Mencatat pelanggaran"
+  },
+  {
+    "id": 15,
+    "name": "eagenda.access",
+    "module": "e_agenda",
+    "display_name": "Akses E-Agenda"
+  },
+  {
+    "id": 16,
+    "name": "master.academic",
+    "module": "master",
+    "display_name": "Kelola tahun ajaran, kelas, penempatan"
+  },
+  {
+    "id": 17,
+    "name": "master.students",
+    "module": "master",
+    "display_name": "Kelola data siswa"
+  },
+  {
+    "id": 18,
+    "name": "master.teachers",
+    "module": "master",
+    "display_name": "Kelola data guru"
+  },
+  {
+    "id": 19,
+    "name": "master.guardians",
+    "module": "master",
+    "display_name": "Kelola data orang tua"
+  },
+  {
+    "id": 20,
+    "name": "guardian.verify",
+    "module": "master",
+    "display_name": "Verifikasi relasi orang tua–siswa"
+  },
+  {
+    "id": 21,
+    "name": "user.manage",
+    "module": "akses",
+    "display_name": "Kelola akun pengguna"
+  },
+  {
+    "id": 22,
+    "name": "role.manage",
+    "module": "akses",
+    "display_name": "Kelola role & permission"
+  },
+  {
+    "id": 23,
+    "name": "qr.manage",
+    "module": "qr",
+    "display_name": "Kelola QR kelas"
+  },
+  {
+    "id": 24,
+    "name": "session.manage",
+    "module": "absensi",
+    "display_name": "Kelola periode, sesi, kalender"
+  },
+  {
+    "id": 25,
+    "name": "settings.manage",
+    "module": "pengaturan",
+    "display_name": "Kelola pengaturan sekolah"
+  },
+  {
+    "id": 26,
+    "name": "audit.view",
+    "module": "audit",
+    "display_name": "Melihat log audit"
+  }
+]

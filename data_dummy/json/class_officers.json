@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "class_id": 5,
+    "student_id": 1,
+    "position": "ketua"
+  },
+  {
+    "id": 2,
+    "class_id": 5,
+    "student_id": 2,
+    "position": "sekretaris"
+  },
+  {
+    "id": 3,
+    "class_id": 6,
+    "student_id": 11,
+    "position": "ketua"
+  },
+  {
+    "id": 4,
+    "class_id": 6,
+    "student_id": 12,
+    "position": "sekretaris"
+  },
+  {
+    "id": 5,
+    "class_id": 7,
+    "student_id": 21,
+    "position": "ketua"
+  },
+  {
+    "id": 6,
+    "class_id": 7,
+    "student_id": 22,
+    "position": "sekretaris"
+  },
+  {
+    "id": 7,
+    "class_id": 8,
+    "student_id": 31,
+    "position": "ketua"
+  },
+  {
+    "id": 8,
+    "class_id": 8,
+    "student_id": 32,
+    "position": "sekretaris"
+  },
+  {
+    "id": 9,
+    "class_id": 9,
+    "student_id": 41,
+    "position": "ketua"
+  },
+  {
+    "id": 10,
+    "class_id": 9,
+    "student_id": 42,
+    "position": "sekretaris"
+  },
+  {
+    "id": 11,
+    "class_id": 10,
+    "student_id": 51,
+    "position": "ketua"
+  },
+  {
+    "id": 12,
+    "class_id": 10,
+    "student_id": 52,
+    "position": "sekretaris"
+  }
+]

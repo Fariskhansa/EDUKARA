@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "class_id": 5,
+    "token": "f4bec6a29f0a537a4d0f17555012314ce007b605",
+    "is_active": false,
+    "generated_by": 1,
+    "generated_at": "2026-07-10 09:00:00",
+    "revoked_at": "2026-09-30 15:00:00",
+    "revoked_by": 1,
+    "revoke_reason": "Stiker QR rusak terkena air (DUMMY)"
+  },
+  {
+    "id": 2,
+    "class_id": 5,
+    "token": "05a80738c741c01b40f34a3dcb3dc5d00120cedb",
+    "is_active": true,
+    "generated_by": 1,
+    "generated_at": "2026-09-30 15:00:00",
+    "revoked_at": null,
+    "revoked_by": null,
+    "revoke_reason": null
+  },
+  {
+    "id": 3,
+    "class_id": 6,
+    "token": "e3e52d9e5592db1564025f07242db2d233e51aed",
+    "is_active": true,
+    "generated_by": 1,
+    "generated_at": "2026-07-10 09:00:00",
+    "revoked_at": null,
+    "revoked_by": null,
+    "revoke_reason": null
+  },
+  {
+    "id": 4,
+    "class_id": 7,
+    "token": "08855cd6b79862a5e6f7aaa2e8122ac646890ff6",
+    "is_active": true,
+    "generated_by": 1,
+    "generated_at": "2026-07-10 09:00:00",
+    "revoked_at": null,
+    "revoked_by": null,
+    "revoke_reason": null
+  },
+  {
+    "id": 5,
+    "class_id": 8,
+    "token": "360ce899b7a3b29365bb930ee937dba259a8c33e",
+    "is_active": true,
+    "generated_by": 1,
+    "generated_at": "2026-07-10 09:00:00",
+    "revoked_at": null,
+    "revoked_by": null,
+    "revoke_reason": null
+  },
+  {
+    "id": 6,
+    "class_id": 9,
+    "token": "82fd05a6e98122aa2be9f66c8d1b5c31173e220e",
+    "is_active": true,
+    "generated_by": 1,
+    "generated_at": "2026-07-10 09:00:00",
+    "revoked_at": null,
+    "revoked_by": null,
+    "revoke_reason": null
+  },
+  {
+    "id": 7,
+    "class_id": 10,
+    "token": "c10f15ebef5a4293fa428e59e6f8fceee5423507",
+    "is_active": true,
+    "generated_by": 1,
+    "generated_at": "2026-07-10 09:00:00",
+    "revoked_at": null,
+    "revoked_by": null,
+    "revoke_reason": null
+  }
+]

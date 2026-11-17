@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "code": "SRG",
+    "name": "Tidak memakai seragam sesuai ketentuan",
+    "default_points": 5,
+    "severity": "ringan",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "code": "HP",
+    "name": "Menggunakan HP saat pembelajaran tanpa izin",
+    "default_points": 10,
+    "severity": "sedang",
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "code": "BLS",
+    "name": "Meninggalkan kelas tanpa izin",
+    "default_points": 20,
+    "severity": "sedang",
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "code": "KLH",
+    "name": "Berkelahi",
+    "default_points": 50,
+    "severity": "berat",
+    "is_active": true
+  }
+]

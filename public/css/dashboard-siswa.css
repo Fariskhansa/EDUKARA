@@ -1,0 +1,1065 @@
+/* ============================================================
+   Sistem Informasi Kesiswaan — SMA Negeri Situraja
+   Action-First Dashboard Siswa Stylesheet
+   ============================================================ */
+
+body.dashboard-body {
+  background-color: var(--color-page, #f8fafc);
+  color: var(--color-text, #0f172a);
+  font-family: var(--font-family, 'Plus Jakarta Sans', system-ui, sans-serif);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   1. DASHBOARD NAVBAR
+   ============================================================ */
+.dashboard-header {
+  background-color: var(--color-surface, #ffffff);
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.dashboard-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header-brand .brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  object-fit: contain;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-primary-dark, #092540);
+  line-height: 1.2;
+}
+
+.brand-tag {
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #475569);
+  font-weight: 600;
+}
+
+.header-user-menu {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.user-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 12px 4px 4px;
+  background-color: var(--color-surface-muted, #f1f5f9);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 9999px;
+}
+
+.user-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary, #1e73be), var(--color-primary-dark, #092540));
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text, #0f172a);
+  line-height: 1.2;
+}
+
+.user-nis {
+  font-size: 0.725rem;
+  color: var(--color-text-muted, #475569);
+  font-weight: 500;
+}
+
+.btn-logout {
+  background-color: var(--color-danger-bg, #fef2f2);
+  color: var(--color-danger-text, #991b1b);
+  border: 1px solid var(--color-danger-border, #fecaca);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-logout:hover {
+  background-color: #fee2e2;
+  color: #7f1d1d;
+  border-color: #f87171;
+}
+
+.btn-logout:focus-visible {
+  outline: 2px solid var(--color-danger, #d32f2f);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   2. MAIN CONTAINER & HERO ACTION SECTION (PRIORITAS 1)
+   ============================================================ */
+.dashboard-main {
+  flex: 1;
+  padding: 28px 0 48px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Greeting Bar */
+.greeting-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.greeting-meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  color: var(--color-text-muted, #475569);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.greeting-meta-badge i {
+  color: var(--color-primary, #1e73be);
+}
+
+.greeting-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--color-primary-dark, #092540) !important;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.02em;
+}
+
+.greeting-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary, #334155);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.badge-identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+/* ============================================================
+   KARTU UTAMA: STATUS & TINDAKAN ABSENSI HARI INI (HERO ACTION)
+   ============================================================ */
+.today-action-card {
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-left: 6px solid var(--color-primary, #1e73be);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 36px;
+  box-shadow: 0 10px 25px -5px rgba(30, 115, 190, 0.1), 0 4px 8px -2px rgba(15, 23, 42, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.today-action-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+}
+
+.status-icon-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.status-icon-wrap--primary {
+  background: rgba(30, 115, 190, 0.12);
+  color: var(--color-primary, #1e73be);
+  border: 1px solid rgba(30, 115, 190, 0.25);
+}
+
+.status-icon-wrap--success {
+  background: rgba(22, 163, 74, 0.12);
+  color: var(--color-success, #16a34a);
+  border: 1px solid rgba(22, 163, 74, 0.25);
+}
+
+.status-icon-wrap--warning {
+  background: rgba(217, 119, 6, 0.12);
+  color: var(--color-warning, #d97706);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+.status-icon-wrap--danger {
+  background: rgba(211, 47, 47, 0.12);
+  color: var(--color-danger, #d32f2f);
+  border: 1px solid rgba(211, 47, 47, 0.25);
+}
+
+.status-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-header-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.status-pill--alert {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.status-pill--success {
+  background-color: var(--color-success-bg, #f0fdf4);
+  color: var(--color-success-text, #14532d);
+  border: 1px solid var(--color-success-border, #bbf7d0);
+}
+
+.status-pill--warning {
+  background-color: var(--color-warning-bg, #fffbeb);
+  color: var(--color-warning-text, #78350f);
+  border: 1px solid var(--color-warning-border, #fde68a);
+}
+
+.status-pill--danger {
+  background-color: var(--color-danger-bg, #fef2f2);
+  color: var(--color-danger-text, #991b1b);
+  border: 1px solid var(--color-danger-border, #fecaca);
+}
+
+.status-time {
+  font-size: 0.775rem;
+  color: var(--color-text-muted, #475569);
+  font-weight: 500;
+}
+
+.status-heading {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-text, #0f172a) !important;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.status-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary, #334155);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.today-action-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn-action-primary {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 800;
+  background: var(--color-primary, #1e73be);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 18px rgba(30, 115, 190, 0.35);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-action-primary:hover {
+  background: var(--color-primary-hover, #155a96);
+  box-shadow: 0 8px 22px rgba(30, 115, 190, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-action-primary:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.btn-action-done {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: var(--color-success-bg, #f0fdf4);
+  color: var(--color-success-text, #14532d);
+  border: 1.5px solid var(--color-success-border, #bbf7d0);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+}
+
+.btn-action-pending {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: var(--color-warning-bg, #fffbeb);
+  color: var(--color-warning-text, #78350f);
+  border: 1.5px solid var(--color-warning-border, #fde68a);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+}
+
+.cta-note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #475569);
+  font-weight: 500;
+}
+
+/* ============================================================
+   3. PRIORITAS 2: FITUR UTAMA SISWA (AKSES CEPAT)
+   ============================================================ */
+.action-services-section {
+  margin-bottom: 36px;
+}
+
+.section-title-wrap {
+  margin-bottom: 20px;
+}
+
+.section-heading-action {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-primary-dark, #092540) !important;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-desc-action {
+  font-size: 0.875rem;
+  color: var(--color-text-muted, #475569);
+  margin: 0;
+}
+
+.action-cards-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.action-card {
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* FEATURED CARD: ABSENSI SISWA (PALING MENONJOL) */
+.action-card--featured {
+  border: 2px solid var(--color-primary, #1e73be);
+  box-shadow: 0 8px 24px rgba(30, 115, 190, 0.14);
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbfe 100%);
+}
+
+.card-featured-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--color-primary, #1e73be), var(--color-primary-dark, #092540));
+  color: #ffffff;
+  font-size: 0.725rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(30, 115, 190, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-featured-badge i {
+  color: #fde047;
+}
+
+.card-body-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+}
+
+.action-card-icon--primary {
+  background: var(--color-primary, #1e73be);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(30, 115, 190, 0.25);
+}
+
+.action-card-icon--success {
+  background: rgba(22, 163, 74, 0.12);
+  color: var(--color-success, #16a34a);
+}
+
+.action-card-icon--danger {
+  background: rgba(211, 47, 47, 0.12);
+  color: var(--color-danger, #d32f2f);
+}
+
+.action-card-icon--clean {
+  background: rgba(22, 163, 74, 0.1);
+  color: var(--color-success, #16a34a);
+}
+
+.action-card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-text, #0f172a) !important;
+  margin: 0 0 8px 0;
+}
+
+.action-card-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary, #334155);
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  flex: 1;
+}
+
+.action-card-footer {
+  margin-top: auto;
+}
+
+.btn-block-action {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary.btn-block-action {
+  background: var(--color-primary, #1e73be);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(30, 115, 190, 0.25);
+}
+
+.btn-primary.btn-block-action:hover {
+  background: var(--color-primary-hover, #155a96);
+  transform: translateY(-1px);
+}
+
+.btn-outline-action {
+  background: #ffffff;
+  border: 1.5px solid var(--color-border-subtle, #cbd5e1);
+  color: var(--color-primary-dark, #092540);
+}
+
+.btn-outline-action:hover {
+  background: var(--color-surface-muted, #f1f5f9);
+  border-color: var(--color-primary, #1e73be);
+  color: var(--color-primary, #1e73be);
+}
+
+.btn-outline-action:focus-visible,
+.btn-primary.btn-block-action:focus-visible {
+  outline: 2px solid var(--color-primary, #1e73be);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   4. PRIORITAS 3: RINGKASAN INFORMASI SISWA (COMPACT STRIP)
+   ============================================================ */
+.compact-summary-section {
+  margin-bottom: 36px;
+}
+
+.compact-section-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted, #475569);
+  margin: 0 0 12px 0;
+}
+
+.compact-summary-strip {
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  padding: 18px 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-right: 1px solid var(--color-border, #e2e8f0);
+  padding-right: 16px;
+}
+
+.summary-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.summary-item-icon {
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.summary-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-item-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #475569);
+  font-weight: 600;
+}
+
+.summary-item-value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-text, #0f172a);
+  line-height: 1.2;
+}
+
+.summary-item-sub {
+  font-size: 0.7rem;
+  color: var(--color-text-muted, #475569);
+}
+
+/* ============================================================
+   5. PRIORITAS 4: INFORMASI SEKOLAH / PANDUAN SISWA
+   ============================================================ */
+.school-notice-section {
+  margin-bottom: 24px;
+}
+
+.notice-card {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.notice-icon {
+  color: #0284c7;
+  font-size: 1.25rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.notice-text h4 {
+  margin: 0 0 4px 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #075985;
+}
+
+.notice-text p {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: #0c4a6e;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   6. MODAL DIALOGS
+   ============================================================ */
+.app-dialog {
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+  max-width: 520px;
+  width: 90%;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.35);
+}
+
+.app-dialog::backdrop {
+  background: rgba(9, 37, 64, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.dialog-content {
+  padding: 24px;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.dialog-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text, #0f172a);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-close-dialog {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--color-text-muted, #475569);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.btn-close-dialog:hover {
+  color: var(--color-text, #0f172a);
+  background-color: #f1f5f9;
+}
+
+.qr-scanner-placeholder {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.scanner-frame {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 18px;
+  border: 3px dashed var(--color-primary, #1e73be);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  color: var(--color-primary, #1e73be);
+  position: relative;
+}
+
+.qr-scanner-placeholder h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text, #0f172a);
+  margin: 0 0 8px 0;
+}
+
+.qr-scanner-placeholder p {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary, #334155);
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.scanner-rules {
+  background: #f1f5f9;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #334155;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.attendance-list,
+.violations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.attendance-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background-color: #f8fafc;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 8px;
+}
+
+.att-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.att-date {
+  font-size: 0.875rem;
+  color: var(--color-text, #0f172a);
+}
+
+.att-time {
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #475569);
+  margin-top: 2px;
+}
+
+.badge-status {
+  font-size: 0.725rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.badge-status--accepted {
+  background-color: var(--color-success-bg, #f0fdf4);
+  color: var(--color-success-text, #14532d);
+  border: 1px solid var(--color-success-border, #bbf7d0);
+}
+
+.badge-status--pending {
+  background-color: var(--color-warning-bg, #fffbeb);
+  color: var(--color-warning-text, #78350f);
+  border: 1px solid var(--color-warning-border, #fde68a);
+}
+
+.badge-status--rejected {
+  background-color: var(--color-danger-bg, #fef2f2);
+  color: var(--color-danger-text, #991b1b);
+  border: 1px solid var(--color-danger-border, #fecaca);
+}
+
+.violation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background-color: var(--color-danger-bg, #fef2f2);
+  border: 1px solid var(--color-danger-border, #fecaca);
+  border-radius: 8px;
+}
+
+.violation-info strong {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-danger-text, #991b1b);
+}
+
+.violation-date {
+  font-size: 0.75rem;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.violation-desc {
+  margin: 4px 0 0 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary, #334155);
+}
+
+.violation-points {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--color-danger, #d32f2f);
+  background: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--color-danger-border, #fecaca);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 28px 16px;
+}
+
+.empty-state i {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.empty-state h4 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  color: var(--color-text, #0f172a);
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #475569);
+}
+
+.dialog-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-secondary {
+  background-color: var(--color-surface-muted, #f1f5f9);
+  color: var(--color-text, #0f172a);
+  border: 1px solid var(--color-border, #e2e8f0);
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #e2e8f0;
+}
+
+/* ============================================================
+   7. FOOTER
+   ============================================================ */
+.dashboard-footer {
+  background-color: var(--color-surface, #ffffff);
+  border-top: 1px solid var(--color-border, #e2e8f0);
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted, #475569);
+  font-weight: 500;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-motto-small {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-primary, #1e73be);
+}
+
+/* ============================================================
+   8. RESPONSIVE BREAKPOINTS
+   ============================================================ */
+@media (max-width: 992px) {
+  .today-action-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .today-action-cta {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .btn-action-primary,
+  .btn-action-done,
+  .btn-action-pending {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .action-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-summary-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .summary-item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard-header-inner {
+    padding: 10px 16px;
+  }
+
+  .user-details {
+    display: none;
+  }
+
+  .user-pill {
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+
+  .logout-text {
+    display: none;
+  }
+
+  .today-action-card {
+    padding: 20px;
+  }
+
+  .status-indicator {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .status-heading {
+    font-size: 1.15rem;
+  }
+
+  .compact-summary-strip {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .summary-item {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border, #e2e8f0);
+    padding-bottom: 12px;
+    padding-right: 0;
+  }
+
+  .summary-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}

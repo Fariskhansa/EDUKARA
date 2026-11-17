@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "siswa",
+    "display_name": "Siswa",
+    "is_system": true
+  },
+  {
+    "id": 2,
+    "name": "pengurus_kelas",
+    "display_name": "Pengurus Kelas (PJ)",
+    "is_system": true
+  },
+  {
+    "id": 3,
+    "name": "guru",
+    "display_name": "Guru",
+    "is_system": true
+  },
+  {
+    "id": 4,
+    "name": "wakasek_kurikulum",
+    "display_name": "Wakasek Kurikulum",
+    "is_system": true
+  },
+  {
+    "id": 5,
+    "name": "kepala_sekolah",
+    "display_name": "Kepala Sekolah",
+    "is_system": true
+  },
+  {
+    "id": 6,
+    "name": "orang_tua",
+    "display_name": "Orang Tua",
+    "is_system": true
+  },
+  {
+    "id": 7,
+    "name": "admin_sistem",
+    "display_name": "Administrator Sistem",
+    "is_system": true
+  }
+]
