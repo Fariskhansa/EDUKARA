@@ -35,8 +35,17 @@ class StudentDashboardController extends Controller
             ->latest('submitted_at')
             ->first();
 
-        // Format tanggal hari ini dalam Bahasa Indonesia
-        $currentDateFormatted = $now->locale('id')->translatedFormat('l, d F Y');
+        // Format tanggal hari ini dalam Bahasa Indonesia ringkas (Contoh: "Selasa, 17 Nov 2026")
+        $currentDateFormatted = $now->locale('id')->translatedFormat('l, d M Y');
+        $academicYearShort = 'TA ' . ($currentClass?->academicYear?->name ?? '2026/2027');
+        // Jika format academic year mengandung kata "Tahun Ajaran" atau semester, sederhanakan jadi "TA 2026/2027"
+        $academicYearShort = preg_replace('/^(Tahun Ajaran|TA)\s*/i', 'TA ', $academicYearShort);
+        // Ambil bagian tahun ajaran saja misal TA 2026/2027
+        if (preg_replace('/^(TA\s*\d{4}\/\d{4}).*$/i', '$1', $academicYearShort, -1, $matched)) {
+            if ($matched) {
+                $academicYearShort = preg_replace('/^(TA\s*\d{4}\/\d{4}).*$/i', '$1', $academicYearShort);
+            }
+        }
 
         // Data riil kedisiplinan & absensi dari database
         $violationsCount = $student->violations()->where('status', 'recorded')->count();
@@ -73,6 +82,7 @@ class StudentDashboardController extends Controller
             'currentClass' => $currentClass,
             'todaySubmission' => $todaySubmission,
             'currentDateFormatted' => $currentDateFormatted,
+            'academicYearShort' => $academicYearShort,
             'violationsCount' => $violationsCount,
             'totalViolationPoints' => $totalViolationPoints,
             'recentViolations' => $recentViolations,

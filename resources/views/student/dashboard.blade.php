@@ -71,19 +71,18 @@
         <!-- Sapaan Hangat Personal -->
         <div class="greeting-bar">
           <div class="greeting-left">
-            <span class="greeting-meta-badge">
-              <i class="fa-regular fa-calendar-days" aria-hidden="true"></i>
-              {{ $currentDateFormatted }} • Tahun Ajaran {{ $currentClass?->academicYear?->name ?? '2026/2027 Ganjil' }}
-            </span>
+            <div class="greeting-meta-row">
+              <span class="greeting-meta-badge">
+                <i class="fa-regular fa-calendar-days" aria-hidden="true"></i>
+                <span class="meta-date-text">{{ $currentDateFormatted }} • {{ $academicYearShort ?? 'TA 2026/2027' }}</span>
+              </span>
+              <span class="badge-identity">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Kelas: <strong>{{ $currentClass ? $currentClass->name : 'X-1' }}</strong></span>
+              </span>
+            </div>
             <h1 class="greeting-title">Halo, {{ $firstName }}! 👋</h1>
-            <p class="greeting-subtitle">Siap menjalani kegiatan belajar di SMA Negeri Situraja hari ini?</p>
-          </div>
-
-          <div class="greeting-right">
-            <span class="badge-identity">
-              <i class="fa-solid fa-chalkboard-user"></i>
-              Kelas: <strong>{{ $currentClass ? $currentClass->name : 'X-1' }}</strong>
-            </span>
+            <p class="greeting-subtitle">Siap menjalani kegiatan belajar hari ini? Jangan lupa catat kehadiran tepat waktu.</p>
           </div>
         </div>
 
@@ -105,9 +104,9 @@
                       </span>
                       <span class="status-time">Tercatat: {{ \Carbon\Carbon::parse($todaySubmission->submitted_at)->format('H:i') }} WIB</span>
                     </div>
-                    <h2 class="status-heading">Anda Sudah Hadir Hari Ini</h2>
+                    <h2 class="status-heading">Kehadiran Hari Ini Sudah Tercatat</h2>
                     <p class="status-desc">
-                      Kehadiran Anda telah disetujui oleh guru piket. 
+                      Kehadiran telah disetujui guru piket. 
                       Status: <strong>{{ $todaySubmission->is_late ? 'Terlambat' : 'Tepat Waktu' }}</strong> 
                       @if($todaySubmission->geofence_flag === 'inside')
                         • Berada di area radius sekolah.
@@ -119,7 +118,7 @@
                   <button type="button" class="btn btn-action-done" disabled>
                     <i class="fa-solid fa-check-double"></i> Absensi Selesai
                   </button>
-                  <span class="cta-note">Terima kasih atas kedisiplinan Anda.</span>
+                  <span class="cta-note">Terima kasih atas kedisiplinan belajar hari ini.</span>
                 </div>
 
               @elseif($todaySubmission->status === 'pending')
@@ -136,7 +135,7 @@
                     </div>
                     <h2 class="status-heading">Pengajuan Absensi Terkirim</h2>
                     <p class="status-desc">
-                      Data absensi Anda sedang menunggu pemeriksaan oleh guru piket kesiswaan. Anda tidak perlu mengajukan absensi ulang.
+                      Data absensi sedang diperiksa oleh guru piket kesiswaan. Tidak perlu mengajukan absensi ulang.
                     </p>
                   </div>
                 </div>
@@ -144,7 +143,7 @@
                   <button type="button" class="btn btn-action-pending" disabled>
                     <i class="fa-solid fa-clock"></i> Menunggu Verifikasi
                   </button>
-                  <span class="cta-note">Status akan otomatis diperbarui.</span>
+                  <span class="cta-note">Status akan otomatis diperbarui begitu disetujui.</span>
                 </div>
 
               @else
@@ -160,7 +159,7 @@
                     </div>
                     <h2 class="status-heading">Absensi Hari Ini Ditolak</h2>
                     <p class="status-desc">
-                      Pengajuan kehadiran Anda ditolak oleh validator. Silakan lakukan pemindaian ulang QR Code kelas atau hubungi guru piket.
+                      Pengajuan kehadiran ditolak validator. Silakan pindai ulang QR Code kelas atau hubungi guru piket di ruang kesiswaan.
                     </p>
                   </div>
                 </div>
@@ -168,7 +167,7 @@
                   <button type="button" class="btn btn-action-primary" onclick="bukaModalAbsensi()">
                     <i class="fa-solid fa-rotate-right"></i> Ajukan Ulang Absensi
                   </button>
-                  <span class="cta-note">Laporkan ke guru piket jika ada kendala.</span>
+                  <span class="cta-note">Laporkan ke guru piket jika menemui kendala.</span>
                 </div>
               @endif
 
@@ -185,9 +184,9 @@
                     </span>
                     <span class="status-time">Sesi Masuk Aktif</span>
                   </div>
-                  <h2 class="status-heading">Catat Kehadiran Anda Sekarang</h2>
+                  <h2 class="status-heading">Catat Kehadiran Sekarang</h2>
                   <p class="status-desc">
-                    Lakukan pemindaian QR Code kelas aktif yang tersedia di ruang kelas <strong>{{ $currentClass ? $currentClass->name : 'Anda' }}</strong> sebelum batas toleransi jam pelajaran berakhir.
+                    Pindai QR Code kelas aktif di ruang kelas <strong>{{ $currentClass ? $currentClass->name : 'X-1' }}</strong> sebelum batas toleransi jam pelajaran berakhir.
                   </p>
                 </div>
               </div>
@@ -214,42 +213,21 @@
             <h2 class="section-heading-action">
               <i class="fa-solid fa-bolt-lightning text-primary" aria-hidden="true"></i> Akses Cepat Fitur Siswa
             </h2>
-            <p class="section-desc-action">Fitur utama yang siap Anda gunakan untuk kebutuhan administrasi belajar.</p>
+            <p class="section-desc-action">Fitur pendukung kehadiran, kedisiplinan, dan administrasi izin belajar.</p>
           </div>
         </div>
 
         <div class="action-cards-grid">
 
-          <!-- 1. ABSENSI SISWA (FEATURED CARD — PALING MENONJOL) -->
-          <article class="action-card action-card--featured" id="cardAbsensi">
-            <div class="card-featured-badge">
-              <i class="fa-solid fa-star"></i> Fitur Utama
-            </div>
-            <div class="card-body-content">
-              <div class="action-card-icon action-card-icon--primary">
-                <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
-              </div>
-              <h3 class="action-card-title">Absensi Siswa</h3>
-              <p class="action-card-desc">
-                Pindai QR Code kelas secara langsung untuk mencatat absensi masuk harian Anda dengan validasi lokasi sekolah.
-              </p>
-            </div>
-            <div class="action-card-footer">
-              <button type="button" class="btn btn-primary btn-block-action" onclick="bukaModalAbsensi()">
-                <i class="fa-solid fa-camera"></i> Buka Kamera Absensi
-              </button>
-            </div>
-          </article>
-
-          <!-- 2. RIWAYAT ABSENSI (TINDAKAN KEDUA) -->
+          <!-- 1. RIWAYAT KEHADIRAN -->
           <article class="action-card" id="cardRiwayat">
             <div class="card-body-content">
               <div class="action-card-icon action-card-icon--success">
                 <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
               </div>
-              <h3 class="action-card-title">Riwayat Absensi</h3>
+              <h3 class="action-card-title">Riwayat Kehadiran</h3>
               <p class="action-card-desc">
-                Lihat daftar kehadiran yang telah terekam, persentase tepat waktu, dan rekapitulasi per bulan.
+                Lihat daftar kehadiran yang terekam, status tepat waktu, dan rekapitulasi bulanan.
               </p>
             </div>
             <div class="action-card-footer">
@@ -259,20 +237,38 @@
             </div>
           </article>
 
-          <!-- 3. POIN PELANGGARAN (TINDAKAN KETIGA) -->
+          <!-- 2. CATATAN PELANGGARAN -->
           <article class="action-card" id="cardPelanggaran">
             <div class="card-body-content">
               <div class="action-card-icon {{ $totalViolationPoints > 0 ? 'action-card-icon--danger' : 'action-card-icon--clean' }}">
                 <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
               </div>
-              <h3 class="action-card-title">Poin Pelanggaran</h3>
+              <h3 class="action-card-title">Catatan Pelanggaran</h3>
               <p class="action-card-desc">
-                Pantau catatan tata tertib siswa dan status akumulasi poin kedisiplinan Anda di sekolah.
+                Pantau catatan kedisiplinan tata tertib sekolah dan akumulasi poin sanksi.
               </p>
             </div>
             <div class="action-card-footer">
               <button type="button" class="btn btn-outline-action btn-block-action" onclick="document.getElementById('modalPelanggaran').showModal()">
                 <i class="fa-solid fa-list-check"></i> Rincian Disiplin ({{ $totalViolationPoints }} Poin)
+              </button>
+            </div>
+          </article>
+
+          <!-- 3. PENGAJUAN IZIN / SAKIT -->
+          <article class="action-card" id="cardIzin">
+            <div class="card-body-content">
+              <div class="action-card-icon action-card-icon--primary">
+                <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
+              </div>
+              <h3 class="action-card-title">Pengajuan Izin</h3>
+              <p class="action-card-desc">
+                Ajukan surat izin atau keterangan sakit resmi langsung ke wali kelas dan guru piket.
+              </p>
+            </div>
+            <div class="action-card-footer">
+              <button type="button" class="btn btn-outline-action btn-block-action" onclick="bukaModalIzin()">
+                <i class="fa-solid fa-file-circle-plus"></i> Ajukan Izin / Sakit
               </button>
             </div>
           </article>
@@ -351,7 +347,7 @@
             <h4>Panduan Disiplin Belajar SMA Negeri Situraja</h4>
             <p>
               Motto Almamater: <em>"Kawignyan Askaraning Tyas"</em> (Pengetahuan adalah Cahaya Jiwa). 
-              Pastikan Anda melakukan pemindaian absensi sebelum jam 07.00 WIB setiap hari sekolah. Jika kamera ponsel atau sinyal GPS mengalami kendala, segera lapor ke guru piket di lobi sekolah.
+              Lakukan pemindaian absensi sebelum jam 07.00 WIB setiap hari sekolah. Jika kamera ponsel atau sinyal GPS mengalami kendala, segera lapor ke guru piket di lobi sekolah.
             </p>
           </div>
         </div>
@@ -408,8 +404,8 @@
         @if($recentAttendance->isEmpty())
           <div class="empty-state">
             <i class="fa-solid fa-calendar-xmark text-muted"></i>
-            <h4>Belum Ada Riwayat Absensi</h4>
-            <p>Data sesi absensi Anda akan tampil di sini setelah Anda melakukan absensi pertama.</p>
+            <h4>Belum Ada Riwayat Kehadiran</h4>
+            <p>Data sesi kehadiran akan tampil di sini setelah absensi pertama tercatat.</p>
           </div>
         @else
           <ul class="attendance-list">
@@ -459,7 +455,7 @@
           <div class="empty-state">
             <i class="fa-solid fa-award text-success"></i>
             <h4>Rekor Kedisiplinan Bersih</h4>
-            <p>Selamat! Anda memiliki rekor kedisiplinan yang bersih tanpa catatan pelanggaran tata tertib (0 Poin).</p>
+            <p>Hebat! Rekor kedisiplinan bersih tanpa catatan pelanggaran tata tertib (0 Poin).</p>
           </div>
         @else
           <ul class="violations-list">
@@ -484,6 +480,49 @@
     </div>
   </dialog>
 
+  <!-- ============================================================
+       MODAL DIALOG 4: PENGAJUAN IZIN / SAKIT (FORM MODAL)
+       ============================================================ -->
+  <dialog id="modalIzin" class="app-dialog">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h3><i class="fa-solid fa-envelope-open-text text-primary"></i> Pengajuan Izin Siswa</h3>
+        <button type="button" class="btn-close-dialog" onclick="document.getElementById('modalIzin').close()" aria-label="Tutup">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <div class="permission-form-mock">
+          <p class="dialog-instruction">
+            Lengkapi formulir di bawah untuk menyampaikan permohonan izin atau surat keterangan sakit resmi ke pihak sekolah:
+          </p>
+          <div class="form-group-mock">
+            <label class="form-label-mock">Jenis Pengajuan</label>
+            <div class="permission-type-pills">
+              <span class="type-pill-active"><i class="fa-solid fa-notes-medical"></i> Sakit</span>
+              <span class="type-pill"><i class="fa-solid fa-house-chimney-user"></i> Izin Keperluan</span>
+              <span class="type-pill"><i class="fa-solid fa-medal"></i> Dispensasi Lomba</span>
+            </div>
+          </div>
+          <div class="form-group-mock">
+            <label class="form-label-mock">Keterangan / Alasan</label>
+            <textarea class="form-textarea-mock" rows="3" placeholder="Tuliskan keterangan singkat alasan ketidakhadiran..." readonly></textarea>
+          </div>
+          <div class="permission-info-box">
+            <i class="fa-solid fa-circle-check text-success"></i>
+            <div>
+              <strong>Integrasi Pengajuan Izin</strong>
+              <p>Formulir izin online terhubung ke wali kelas dan sistem absensi sekolah.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <button type="button" class="btn btn-secondary" onclick="document.getElementById('modalIzin').close()">Tutup</button>
+      </div>
+    </div>
+  </dialog>
+
   <!-- ============ FOOTER ============ -->
   <footer class="dashboard-footer">
     <div class="container footer-content">
@@ -503,6 +542,10 @@
   }
   function bukaModalRiwayat() {
     const modal = document.getElementById('modalRiwayat');
+    if (modal) modal.showModal();
+  }
+  function bukaModalIzin() {
+    const modal = document.getElementById('modalIzin');
     if (modal) modal.showModal();
   }
 </script>
